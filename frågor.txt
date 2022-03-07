@@ -1,0 +1,20 @@
+-motivera ditt val av hashfunktion, krockhantering och tabellstorlek
+
+Hashfunktionen tog vi samma som det visades på funktionen
+Krockhanteringen testade vi göra en länkadlista men fungerade inte så vi gjorde en funktion "hashfunktion_2"
+som tar det hashade värdet och lägger på 1 (Linjär probning). Det gör så att det inte kan se krockar och att man kommer fylla
+hela hastabellen. ( Så man brukar ta storleket på hashtabellen= 2* antal element)
+Storleket har vi tagit 2x antalet element
+
+-skissa hashtabellen
+
+-förklara varför hashning ger snabb sökning
+Eftersom man slipper gå igenom en hel lista och kolla ord för ord och istället har delat upp "trädet" i olika 
+slots där man bara kan stoppa in ordet i hashfunktionen och sedan hoppa direkt till den sloten. Dock så man kan 
+behöva använda vår andra hasfunktion några gånger ifall det skulle ske krockar.
+
+-berätta hur en unittest-fil är upplagd.
+En unitest fil är upplagt då att den testar olika fall och ser till att alla funktioner fungerar som de ska.
+t.ex. i denhär labben så kollar de första 4 funktionerna i Unitest: att lagra, att söka och att söka efter ett
+felaktigt värde. Ofta kan man göra det manuellt men ifall man har mer avancerade koder så är det enklare att 
+skriva ett unitest.
